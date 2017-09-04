@@ -4,7 +4,6 @@
 [![Version](https://img.shields.io/cocoapods/v/NilTabbarAnimator.svg?style=flat)](http://cocoapods.org/pods/NilTabbarAnimator)
 [![License](https://img.shields.io/cocoapods/l/NilTabbarAnimator.svg?style=flat)](http://cocoapods.org/pods/NilTabbarAnimator)
 [![Platform](https://img.shields.io/cocoapods/p/NilTabbarAnimator.svg?style=flat)](http://cocoapods.org/pods/NilTabbarAnimator)
-## NilTabbarAnimator 
 
 Make UITabBarController switching tab with an animation. 
 
