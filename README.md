@@ -7,6 +7,9 @@
 
 Make UITabBarController switching tab with an animation. 
 
+![Preview](https://media.giphy.com/media/3ohhwLl8un1NyzkFyg/giphy.gif)
+
+
 ## Requirements
 Swift > 3.0 
 
