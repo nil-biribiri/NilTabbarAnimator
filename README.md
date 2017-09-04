@@ -4,13 +4,13 @@
 [![Version](https://img.shields.io/cocoapods/v/NilTabbarAnimator.svg?style=flat)](http://cocoapods.org/pods/NilTabbarAnimator)
 [![License](https://img.shields.io/cocoapods/l/NilTabbarAnimator.svg?style=flat)](http://cocoapods.org/pods/NilTabbarAnimator)
 [![Platform](https://img.shields.io/cocoapods/p/NilTabbarAnimator.svg?style=flat)](http://cocoapods.org/pods/NilTabbarAnimator)
+## NilTabbarAnimator 
 
-## Example
-
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+Make UITabBarController switching tab with an animation. 
 
 ## Requirements
 Swift > 3.0 
+
 ## Installation
 
 NilTabbarAnimator is available through [CocoaPods](http://cocoapods.org). To install
