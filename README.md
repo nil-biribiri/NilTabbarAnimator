@@ -10,7 +10,7 @@
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
-
+Swift > 3.0 
 ## Installation
 
 NilTabbarAnimator is available through [CocoaPods](http://cocoapods.org). To install
@@ -20,9 +20,30 @@ it, simply add the following line to your Podfile:
 pod 'NilTabbarAnimator'
 ```
 
+## Usage
+
+```swift
+import UIKit
+import NilTabbarAnimator // Import NilTabbarAnimator first
+
+class ViewController: UITabBarController, UITabBarControllerDelegate {
+    
+    let tabbarDelegate = ScrollingTabBarControllerDelegate(withTransitionDuration: 0.2)
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        // Set UITabBarControllerDelegate 
+        self.delegate = tabbarDelegate
+
+    }
+
+}
+```
+
 ## Author
 
-nilc.nolan@gmail.com, nilc.nolan@gmail.com
+ nilc.nolan@gmail.com
 
 ## License
 
