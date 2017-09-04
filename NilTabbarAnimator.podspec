@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'NilTabbarAnimator'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of NilTabbarAnimator.'
+  s.version          = '0.1.4'
+  s.summary          = 'Make UITabbarVC switching animate.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,21 +17,22 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+  s.description      = 'Switching UITabbarViewController with animation.'
 
-  s.homepage         = 'https://github.com/nilc.nolan@gmail.com/NilTabbarAnimator'
+  s.homepage         = 'https://github.com/nil-biribiri/NilTabbarAnimator'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'nilc.nolan@gmail.com' => 'nilc.nolan@gmail.com' }
-  s.source           = { :git => 'https://github.com/nilc.nolan@gmail.com/NilTabbarAnimator.git', :tag => s.version.to_s }
+  s.author           = { 'NilNilNil' => 'nilc.nolan@gmail.com' }
+  # s.source           = { :git => 'https://github.com/nil-biribiri/NilTabbarAnimator.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => "https://github.com/nil-biribiri/NilTabbarAnimator.git", :branch => "master", :tag => s.version.to_s }
+
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'NilTabbarAnimator/Classes/**/*'
-  
+
+  s.source_files  = '*.{h,m,swift}'
+
   # s.resource_bundles = {
   #   'NilTabbarAnimator' => ['NilTabbarAnimator/Assets/*.png']
   # }
