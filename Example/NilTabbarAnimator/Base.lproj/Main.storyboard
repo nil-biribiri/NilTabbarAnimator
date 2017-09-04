@@ -20,7 +20,19 @@
                     <view key="view" contentMode="scaleToFill" id="j7Z-FS-tcI">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2nd VC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U6J-Cp-smL">
+                                <rect key="frame" x="134.5" y="314.5" width="106" height="38.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="U6J-Cp-smL" firstAttribute="centerX" secondItem="j7Z-FS-tcI" secondAttribute="centerX" id="BV3-P9-LmM"/>
+                            <constraint firstItem="U6J-Cp-smL" firstAttribute="centerY" secondItem="j7Z-FS-tcI" secondAttribute="centerY" id="WZj-dQ-aON"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="recents" id="v1r-Lh-Ny0"/>
                 </viewController>
@@ -39,7 +51,19 @@
                     <view key="view" contentMode="scaleToFill" id="FDJ-vO-Q29">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1st VC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t0p-m9-8c6">
+                                <rect key="frame" x="141" y="314.5" width="92" height="38.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="t0p-m9-8c6" firstAttribute="centerY" secondItem="FDJ-vO-Q29" secondAttribute="centerY" id="2zL-Kl-ASL"/>
+                            <constraint firstItem="t0p-m9-8c6" firstAttribute="centerX" secondItem="FDJ-vO-Q29" secondAttribute="centerX" id="fwc-oa-4GE"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="favorites" id="dyi-FF-oAY"/>
                 </viewController>

@@ -10,8 +10,15 @@ import Foundation
 import UIKit
 
 public class ScrollingTabBarControllerDelegate: NSObject, UITabBarControllerDelegate {
+    
+    var duration:Double?
+   
+    public init(withTransitionDuration: Double = 0.5) {
+        self.duration = withTransitionDuration
+    }
+    
     public func tabBarController(_ tabBarController: UITabBarController, animationControllerForTransitionFrom fromVC: UIViewController, to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        return ScrollingTransitionAnimator(tabBarController: tabBarController, lastIndex: tabBarController.selectedIndex)
+        return ScrollingTransitionAnimator(tabBarController: tabBarController, lastIndex: tabBarController.selectedIndex, transitionDuration: duration!)
     }
 }
 
@@ -19,14 +26,16 @@ class ScrollingTransitionAnimator: NSObject, UIViewControllerAnimatedTransitioni
     weak var transitionContext: UIViewControllerContextTransitioning?
     var tabBarController: UITabBarController!
     var lastIndex = 0
+    var transitionDuration = 0.5
     
     func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
-        return 0.4
+        return transitionDuration
     }
     
-    init(tabBarController: UITabBarController, lastIndex: Int) {
+    init(tabBarController: UITabBarController, lastIndex: Int, transitionDuration: Double) {
         self.tabBarController = tabBarController
         self.lastIndex = lastIndex
+        self.transitionDuration = transitionDuration
     }
     
     func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {

@@ -11,19 +11,14 @@ import NilTabbarAnimator
 
 class ViewController: UITabBarController, UITabBarControllerDelegate {
     
-    let tabbarDelegate = ScrollingTabBarControllerDelegate()
+    let tabbarDelegate = ScrollingTabBarControllerDelegate(withTransitionDuration: 0.2)
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.delegate = tabbarDelegate
-        
         // Do any additional setup after loading the view, typically from a nib.
-    }
+        self.delegate = tabbarDelegate
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
 }
