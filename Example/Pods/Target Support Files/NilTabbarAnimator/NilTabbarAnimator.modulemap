@@ -1,0 +1,6 @@
+framework module NilTabbarAnimator {
+  umbrella header "NilTabbarAnimator-umbrella.h"
+
+  export *
+  module * { export * }
+}

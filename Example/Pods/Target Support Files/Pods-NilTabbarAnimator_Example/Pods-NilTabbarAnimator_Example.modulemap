@@ -1,0 +1,6 @@
+framework module Pods_NilTabbarAnimator_Example {
+  umbrella header "Pods-NilTabbarAnimator_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

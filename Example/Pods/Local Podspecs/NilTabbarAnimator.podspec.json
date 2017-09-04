@@ -1,0 +1,22 @@
+{
+  "name": "NilTabbarAnimator",
+  "version": "0.1.0",
+  "summary": "A short description of NilTabbarAnimator.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/nilc.nolan@gmail.com/NilTabbarAnimator",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "nilc.nolan@gmail.com": "nilc.nolan@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/nilc.nolan@gmail.com/NilTabbarAnimator.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "NilTabbarAnimator/Classes/**/*"
+}
