@@ -9,8 +9,8 @@
 import Foundation
 import UIKit
 
-class ScrollingTabBarControllerDelegate: NSObject, UITabBarControllerDelegate {
-    func tabBarController(_ tabBarController: UITabBarController, animationControllerForTransitionFrom fromVC: UIViewController, to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+public class ScrollingTabBarControllerDelegate: NSObject, UITabBarControllerDelegate {
+    public func tabBarController(_ tabBarController: UITabBarController, animationControllerForTransitionFrom fromVC: UIViewController, to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         return ScrollingTransitionAnimator(tabBarController: tabBarController, lastIndex: tabBarController.selectedIndex)
     }
 }

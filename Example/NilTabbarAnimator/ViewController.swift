@@ -7,11 +7,17 @@
 //
 
 import UIKit
+import NilTabbarAnimator
 
-class ViewController: UIViewController {
+class ViewController: UITabBarController, UITabBarControllerDelegate {
+    
+    let tabbarDelegate = ScrollingTabBarControllerDelegate()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.delegate = tabbarDelegate
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 
