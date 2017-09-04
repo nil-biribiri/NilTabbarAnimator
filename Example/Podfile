@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'NilTabbarAnimator_Example' do
+  pod 'NilTabbarAnimator', :path => '../'
+
+  target 'NilTabbarAnimator_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
