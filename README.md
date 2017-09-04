@@ -21,7 +21,8 @@ pod 'NilTabbarAnimator'
 ```
 
 ## Usage
-  import NilTabbarAnimator
+  Import NilTabbarAnimator
+  
   Then just set UITabbarController delegate to ScrollingTabBarControllerDelegate()
 
 ## Author
