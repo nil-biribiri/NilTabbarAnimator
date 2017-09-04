@@ -21,9 +21,25 @@ pod 'NilTabbarAnimator'
 ```
 
 ## Usage
-  Import NilTabbarAnimator
-  
-  Then just set UITabbarController delegate to ScrollingTabBarControllerDelegate()
+
+```swift
+import UIKit
+import NilTabbarAnimator // Import NilTabbarAnimator first
+
+class ViewController: UITabBarController, UITabBarControllerDelegate {
+    
+    let tabbarDelegate = ScrollingTabBarControllerDelegate(withTransitionDuration: 0.2)
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        // Set UITabBarControllerDelegate 
+        self.delegate = tabbarDelegate
+
+    }
+
+}
+```
 
 ## Author
 
